@@ -65,27 +65,30 @@ let answer = Math.floor(eval(question));
 
 The project follows a simple interactive architecture:
 
-User Interface (HTML / CSS)
+**User Interface (HTML / CSS)
         ↓
 Game Logic (JavaScript)
         ↓
 Backend (PHP)
         ↓
-Database (MySQL)
+Database (MySQL)**
 
 ---
 
 # 📂 Project Structure
 
-bodmas-game/
+ bodmas-game
 │
-├── index.php
+├── index.php 
+│
 ├── style.css
+│
 ├── script.js
-├── db.php
+│
+├── db.php  
+│
 ├── save_score.php
-├── leaderboard.php
-
+└── leaderboard.php
 --- 
 
 # 🛠 Technologies Used
