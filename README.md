@@ -10,9 +10,8 @@ The project demonstrates how frontend interactivity and backend systems can be c
 
 ---
 
-# 🚀 Modules Implemented
 
-## 1️⃣ Game Engine (BODMAS Logic System)
+## 1️ Game Engine (BODMAS Logic System)
 
 This module dynamically generates arithmetic questions based on BODMAS rules.
 
@@ -26,12 +25,9 @@ This module dynamically generates arithmetic questions based on BODMAS rules.
 * Generated Question
 * Correct Answer (calculated automatically)
 
-### Example Output
-
-```id="ex1"
 --- 
 
-2️⃣ Score & Leaderboard System
+2 Score & Leaderboard System
 
 This module stores player scores and displays top results.
 
@@ -45,6 +41,7 @@ Example Output
 Kesar - 12
 Rahul - 10
 Sneha - 8
+
 🧠 Game Logic Design
 
 Example logic used for question generation:
@@ -52,14 +49,19 @@ Example logic used for question generation:
 let question = `${num1} ${op1} ${num2} ${op2} ${num3}`;
 let answer = Math.floor(eval(question));
 
-Game rules:
+---
+
+# Game rules:
 
 - Player has 60 seconds
 - Player has 3 lives
 - Each correct answer increases score
 - Wrong answer reduces life
 - Game ends when time or lives are over
-🏗 System Architecture
+
+  ---
+  
+# 🏗 System Architecture
 
 The project follows a simple interactive architecture:
 
@@ -70,7 +72,11 @@ Game Logic (JavaScript)
 Backend (PHP)
         ↓
 Database (MySQL)
-📂 Project Structure
+
+---
+
+# 📂 Project Structure
+
 bodmas-game/
 │
 ├── index.php
@@ -79,17 +85,22 @@ bodmas-game/
 ├── db.php
 ├── save_score.php
 ├── leaderboard.php
-│
-└── sounds/
-    ├── correct.mp3
-    └── wrong.mp3
-🛠 Technologies Used
+
+--- 
+
+# 🛠 Technologies Used
+
 PHP
 MySQL
 HTML / CSS
 JavaScript
-⚙️ Setup Instructions
+
+--- 
+
+# ⚙️ Setup Instructions
+
 Install XAMPP or any PHP server.
+
 Place the project folder inside:
 htdocs/
 Create database:
@@ -98,7 +109,10 @@ Create table:
 scores
 Run project in browser:
 http://localhost/bodmas-game
-📸 Screenshots
+
+---
+
+# 📸 Screenshots
 Game Start Screen
 
 (Add screenshot here)
