@@ -79,9 +79,24 @@ Database (MySQL)
 
 # 📂 Project Structure
 
-bodmas-game
-|
-|
+ bodmas-game                                    
+│                                                    
+├── index.php                                    
+│                                                                 
+│                                                                      
+├── style.css                                                                         
+│                                                                                        
+│                                                                                                 
+├── script.js                                                                            
+│                                                                                          
+│                                                                                             
+├── db.php                                                                                     
+|                                                                                                                    
+|                                                                                            
+├── save_score.php                                                                        
+│                                                                                                      
+│                                                                                                   
+├── leaderboard.php                                                                           
 
 
 --- 
