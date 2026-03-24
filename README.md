@@ -77,23 +77,24 @@ Database (MySQL)**
 
 # 📂 Project Structure
 
- bodmas-game
+ rayeva-ai
 │
-├── index.php 
+├── config
+│   └── db.php
 │
-|
-├── style.css
+├── modules
+│   ├── categoryModule.php
+│   └── proposalModule.php
 │
-|
-├── script.js
+├── pages
+│   ├── category.php
+│   └── proposal.php
 │
-|
-├── db.php  
+├── services
+│   └── aiService.php
 │
-|
-├── save_score.php
-|
-└── leaderboard.php
+├── index.php
+└── README.md
 --- 
 
 # 🛠 Technologies Used
