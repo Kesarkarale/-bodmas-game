@@ -132,6 +132,6 @@ Leaderboard
 
 # 👩‍💻 Author
 
-Kesar Karale
+**Kesar Karale
 Regal College of Technology & Management
-SNDT University
+SNDT University**
