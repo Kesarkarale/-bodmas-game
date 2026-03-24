@@ -28,22 +28,28 @@ This module dynamically generates arithmetic questions based on BODMAS rules.
 
 --- 
 
-2 Score & Leaderboard System
+**Score & Leaderboard System**
 
-This module stores player scores and displays top results.
+This stores player scores and displays top results.
 
-Input
-Player Name
-Final Score
-Output
-Stored database entry
-Leaderboard display
-Example Output
-Kesar - 12
-Rahul - 10
-Sneha - 8
+Input                                                                 
 
-🧠 Game Logic Design
+Player Name                                                      
+Final Score                                                                  
+
+Output                                                                           
+Stored database entry                                                                   
+Leaderboard display                                                          
+Example Output                                                            
+Kesar - 12                                                            
+Rahul - 10                                                    
+Sneha - 8                                              
+
+
+---
+
+
+**🧠 Game Logic Design**
 
 Example logic used for question generation:
 
@@ -80,13 +86,13 @@ Database (MySQL)
 # 📂 Project Structure
 
  bodmas-game                                    
- │                                                    
+│                                                    
 ├── index.php                                    
- │                                                                 
- │                                                                      
+│                                                                 
+│                                                                      
 ├── style.css                                                                         
- │                                                                                        
- │                                                                                                 
+│                                                                                        
+│                                                                                                 
 ├── script.js                                                                            
 │                                                                                          
 │                                                                                             
