@@ -101,15 +101,15 @@ JavaScript
 
 # ⚙️ Setup Instructions
 
-Install XAMPP or any PHP server.
+Install XAMPP or any PHP server.                                               
 
-Place the project folder inside:
-htdocs/
-Create database:
-bodmas_game
-Create table:
-scores
-Run project in browser:
+Place the project folder inside:                            
+htdocs/                                                          
+Create database:                                          
+bodmas_game                                          
+Create table:                                    
+scores                                            
+Run project in browser:                          
 http://localhost/bodmas-game
 
 ---
@@ -126,10 +126,11 @@ Game Play
 Leaderboard
 
 (Add screenshot here)
-Question: 5 + 3 * 2
-Answer: 11
+ 
 
-👩‍💻 Author
+---
+
+# 👩‍💻 Author
 
 Kesar Karale
 Regal College of Technology & Management
