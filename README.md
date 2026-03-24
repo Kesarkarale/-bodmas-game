@@ -65,11 +65,11 @@ let answer = Math.floor(eval(question));
 
 The project follows a simple interactive architecture:
 
-User Interface (HTML / CSS)
+ User Interface (HTML / CSS)          
         ↓
-Game Logic (JavaScript)
+ Game Logic (JavaScript)           
         ↓        
-Backend (PHP)
+ Backend (PHP)           
         ↓       
 Database (MySQL)
 
