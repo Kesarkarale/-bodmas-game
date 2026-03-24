@@ -87,12 +87,12 @@ Database (MySQL)
 
  📁 bodmas-game
 │
-├── index.php
-├── style.css
-├── script.js
-├── db.php
-├── save_score.php
-└── leaderboard.php
+├── index.php                                                                              
+├── style.css                                                                                             
+├── script.js                                                                                      
+├── db.php                                                                                        
+├── save_score.php                                                                                          
+└── leaderboard.php                                                                                              
 
 --- 
 
