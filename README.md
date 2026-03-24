@@ -12,7 +12,7 @@ The project demonstrates how frontend interactivity and backend systems can be c
 ---
 
 
-## 1️ Game Engine (BODMAS Logic System)
+##  Game Engine (BODMAS Logic System)
 
 This module dynamically generates arithmetic questions based on BODMAS rules.
 
@@ -85,7 +85,7 @@ Database (MySQL)
 
 # 📂 Project Structure
 
- 📁 bodmas-game
+ 📁 bodmas-game                                                                                         
 │                                                                                                   
 ├── index.php                                                                              
 ├── style.css                                                                                             
@@ -126,16 +126,13 @@ http://localhost/bodmas-game
 
 # 📸 Screenshots
 Game Start Screen
-
-(Add screenshot here)
+![Game Start Screen](GameStartScreen.png)
 
 Game Play
-
-(Add screenshot here)
+![Game Play](GamePlay.png)
 
 Leaderboard
-
-(Add screenshot here)
+![Leaderboard](Leaderboard.png)
  
 
 ---
