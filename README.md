@@ -86,7 +86,7 @@ Database (MySQL)
 # 📂 Project Structure
 
  📁 bodmas-game
-│
+│                                                                                                   
 ├── index.php                                                                              
 ├── style.css                                                                                             
 ├── script.js                                                                                      
