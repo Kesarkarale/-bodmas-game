@@ -1,0 +1,133 @@
+ body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top, #1a1a2e, #0f3460);
+  overflow: hidden;
+}
+
+/* Background particles */
+body::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: url('https://www.transparenttextures.com/patterns/stardust.png');
+  animation: moveBg 20s linear infinite;
+  opacity: 0.3;
+}
+
+@keyframes moveBg {
+  from { transform: translate(0,0); }
+  to { transform: translate(-200px, -200px); }
+}
+
+/* Center layout */
+.main-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Glass Neon Card */
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  padding: 30px;
+  border-radius: 20px;
+  width: 370px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0,255,255,0.3);
+  color: white;
+}
+
+/* Title glow */
+h1 {
+  text-shadow: 0 0 10px cyan;
+}
+
+/* Inputs */
+input, select {
+  width: 92%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+/* Neon buttons */
+button {
+  width: 95%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #00f2fe, #4facfe);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #00f2fe;
+}
+
+button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px #00f2fe;
+}
+
+/* Restart */
+.restart {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  box-shadow: 0 0 10px #ff416c;
+}
+
+/* Top bar */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Question box */
+.question-box {
+  background: rgba(255,255,255,0.1);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px 0;
+  text-shadow: 0 0 5px white;
+}
+
+/* Progress */
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#progress {
+  height: 8px;
+  width: 100%;
+  background: cyan;
+  border-radius: 10px;
+  box-shadow: 0 0 10px cyan;
+}
+
+/* Result */
+.correct {
+  color: #00ffcc;
+  text-shadow: 0 0 5px #00ffcc;
+}
+
+.wrong {
+  color: #ff4d6d;
+  text-shadow: 0 0 5px #ff4d6d;
+}
+#playerDisplay {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #00f2fe;
+}
