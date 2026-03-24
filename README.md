@@ -8,6 +8,7 @@ The goal of the system is to help users practice arithmetic operations using **B
 
 The project demonstrates how frontend interactivity and backend systems can be combined to create a complete game with real-time feedback, scoring, and leaderboard tracking.
 
+
 ---
 
 
@@ -78,27 +79,9 @@ Database (MySQL)
 
 # 📂 Project Structure
 
- rayeva-ai
-│
-├── config
-│   └── db.php
-│
-├── modules
-│   ├── categoryModule.php
-│   └── proposalModule.php
-│
-├── pages
-│   ├── category.php
-│   └── proposal.php
-│
-├── services
-│   └── aiService.php
-│
-├── index.php
-└── README.md
-
-
-
+bodmas-game
+|
+|
 
 
 --- 
