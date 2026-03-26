@@ -8,12 +8,15 @@
 /* Background particles */
 body::before {
   content: "";
-  position: absolute;
+  position: fixed;
+  inset: 0;
   width: 200%;
   height: 200%;
   background: url('https://www.transparenttextures.com/patterns/stardust.png');
   animation: moveBg 20s linear infinite;
   opacity: 0.3;
+  pointer-events: none;
+  z-index: 0;
 }
 
 @keyframes moveBg {
@@ -23,57 +26,88 @@ body::before {
 
 /* Center layout */
 .main-container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
 }
 
-/* Glass Neon Card */
+/* Card */
 .card {
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(20px);
-  padding: 30px;
-  border-radius: 20px;
-  width: 370px;
+  padding: 36px 30px;
+  border-radius: 24px;
+  width: 470px;
+  max-width: 100%;
   text-align: center;
-  box-shadow: 0 0 25px rgba(0,255,255,0.3);
+  box-shadow: 0 0 30px rgba(0,255,255,0.25);
   color: white;
+  position: relative;
+  overflow: visible;
 }
 
-/* Title glow */
+/* Title */
 h1 {
-  text-shadow: 0 0 10px cyan;
+  font-size: 2.2em;
+  text-shadow: 0 0 15px cyan;
+  margin: 0 0 26px;
+  line-height: 1.2;
+}
+
+h2 {
+  margin: 12px 0;
+}
+
+h3 {
+  margin: 10px 0;
 }
 
 /* Inputs */
 input, select {
-  width: 92%;
-  padding: 12px;
-  margin: 10px 0;
-  border-radius: 10px;
+  width: 100%;
+  padding: 16px 18px;
+  margin: 0 0 16px;
+  border-radius: 14px;
   border: none;
   outline: none;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
-/* Neon buttons */
+/* Buttons */
 button {
-  width: 95%;
-  padding: 12px;
+  width: 100%;
+  padding: 14px;
   margin-top: 10px;
   border: none;
-  border-radius: 10px;
+  border-radius: 14px;
   background: linear-gradient(45deg, #00f2fe, #4facfe);
   color: white;
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
   box-shadow: 0 0 10px #00f2fe;
+  box-sizing: border-box;
 }
 
 button:hover {
-  transform: scale(1.08);
+  transform: scale(1.03);
   box-shadow: 0 0 20px #00f2fe;
+}
+
+/* MCQ buttons */
+.option-btn {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 /* Restart */
@@ -86,34 +120,72 @@ button:hover {
 .top-bar {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
   font-weight: bold;
+  flex-wrap: wrap;
+  font-size: 14px;
 }
 
-/* Question box */
+/* Level text */
+#levelDisplay {
+  font-size: 15px;
+  color: #00f2fe;
+}
+
+/* ICON GROUP */
+#iconGroup {
+  display: flex;
+  gap: 8px;
+}
+
+.iconBtn {
+  background: rgba(255,255,255,0.1);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  border: none;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  padding: 0;
+}
+
+.iconBtn:hover {
+  transform: scale(1.12);
+}
+
+/* Question */
 .question-box {
   background: rgba(255,255,255,0.1);
-  padding: 15px;
-  border-radius: 10px;
-  margin: 10px 0;
+  padding: 16px;
+  border-radius: 14px;
+  margin: 12px 0;
   text-shadow: 0 0 5px white;
+  font-size: 17px;
+  word-wrap: break-word;
 }
 
 /* Progress */
 .progress-bar {
   width: 100%;
-  height: 8px;
+  height: 10px;
   background: rgba(255,255,255,0.2);
   border-radius: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 #progress {
-  height: 8px;
+  height: 10px;
   width: 100%;
   background: cyan;
   border-radius: 10px;
-  box-shadow: 0 0 10px cyan;
+  box-shadow: 0 0 12px cyan;
 }
 
 /* Result */
@@ -126,8 +198,222 @@ button:hover {
   color: #ff4d6d;
   text-shadow: 0 0 5px #ff4d6d;
 }
+
 #playerDisplay {
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   color: #00f2fe;
+}
+
+/* Shake */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+.card.shake {
+  animation: shake 0.3s;
+}
+
+/* LEVELS PAGE SCROLL FIX */
+body.levels-page {
+  overflow-y: auto;
+}
+
+body.levels-page .card {
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+body.levels-page .card::-webkit-scrollbar {
+  width: 6px;
+}
+
+body.levels-page .card::-webkit-scrollbar-thumb {
+  background: cyan;
+  border-radius: 10px;
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  .main-container {
+    padding: 16px;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 420px;
+    padding: 28px 22px;
+    border-radius: 20px;
+  }
+
+  h1 {
+    font-size: 1.9em;
+    margin-bottom: 22px;
+  }
+
+  input, select, button {
+    font-size: 15px;
+  }
+
+  .option-btn {
+    font-size: 15px;
+    padding: 11px;
+  }
+
+  .question-box {
+    font-size: 16px;
+    padding: 14px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  body {
+    overflow-y: auto;
+  }
+
+  .main-container {
+    min-height: 100vh;
+    padding: 12px;
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+    padding: 22px 16px;
+    border-radius: 18px;
+  }
+
+  h1 {
+    font-size: 1.6em;
+    margin-bottom: 18px;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  input, select {
+    padding: 13px 14px;
+    font-size: 14px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 12px;
+  }
+
+  .option-btn {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+    margin: 6px 0;
+  }
+
+  .top-bar {
+    gap: 6px;
+    justify-content: center;
+    font-size: 13px;
+  }
+
+  #levelDisplay,
+  #timer,
+  #lives,
+  #score {
+    font-size: 13px;
+  }
+
+  .iconBtn {
+    width: 32px;
+    height: 32px;
+    font-size: 13px;
+  }
+
+  .question-box {
+    padding: 12px;
+    font-size: 15px;
+    margin: 10px 0;
+  }
+
+  .progress-bar,
+  #progress {
+    height: 8px;
+  }
+
+  #playerDisplay {
+    font-size: 13px;
+  }
+
+  body.levels-page .card {
+    max-height: none;
+    overflow-y: visible;
+  }
+
+  #levelsContainer {
+    max-height: 260px !important;
+    overflow-y: auto !important;
+  }
+}
+
+/* VERY SMALL MOBILE */
+@media (max-width: 360px) {
+  .card {
+    padding: 18px 12px;
+  }
+
+  h1 {
+    font-size: 1.4em;
+  }
+
+  button,
+  input,
+  select {
+    font-size: 13px;
+  }
+
+  .option-btn {
+    font-size: 13px;
+  }
+
+  .question-box {
+    font-size: 14px;
+  }
+}
+
+/* LEVEL BUTTON STYLE */
+#levelsContainer button {
+  width: 100%;
+  padding: 18px;
+  margin: 10px 0;
+  border-radius: 40px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  background: linear-gradient(45deg,#16d4d9,#4facfe);
+  color: white;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+  transition: 0.3s;
+}
+
+#levelsContainer button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 18px cyan;
+}
+
+/* LOCKED LEVEL */
+#levelsContainer button[style*="opacity"] {
+  background: linear-gradient(45deg,#355c7d,#4b79a1);
+  color: #cfcfcf;
+  box-shadow: none;
 }
