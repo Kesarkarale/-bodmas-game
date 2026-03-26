@@ -91,6 +91,9 @@ http://localhost/bodmas-master/
 Game Start Screen
 ![Game Start Screen](GameStartScreen.png)
 
+Levels 
+![Level](Level.png)
+
 Game Play
 ![Game Play](GamePlay.png)
 
