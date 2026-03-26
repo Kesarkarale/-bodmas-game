@@ -2,7 +2,7 @@
 
 ## 📌 Project Overview
 
-This project implements an interactive math-based game using **PHP, JavaScript, and MySQL**.
+This project implements an interactive math-based game using **PHP, JavaScript, and MySQL**. 
 
 The goal of the system is to help users practice arithmetic operations using **BODMAS rules** in a fun and engaging way.
 
