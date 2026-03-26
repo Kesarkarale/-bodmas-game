@@ -57,16 +57,12 @@ Database (MySQL)
                                                                                                
 --- 
 
- 
----
-
 ## ⚙️ How to Run
 
 1. Install XAMPP / WAMP
 2. Move project folder to:
 
    htdocs/
-
 
 3. Start:
 - Apache
@@ -111,15 +107,17 @@ Leaderboard
 
 ---
 
+## ⭐ Support
+
+If you like this project, please ⭐ the repository!
+
+---
+
+
 ## 👩‍💻 Author
 
 **Kesar Karale**
  Regal College of Technology & Management 
  SNDT University
 ---
-
-## ⭐ Support
-
-If you like this project, please ⭐ the repository!
-
----
+ 
