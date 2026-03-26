@@ -1,72 +1,32 @@
- # BODMAS Master Pro – Math Game System
+ # 🎮 BODMAS Master Game
 
-## 📌 Project Overview
-
-This project implements an interactive math-based game using **PHP, JavaScript, and MySQL**. 
-
-The goal of the system is to help users practice arithmetic operations using **BODMAS rules** in a fun and engaging way.
-
-The project demonstrates how frontend interactivity and backend systems can be combined to create a complete game with real-time feedback, scoring, and leaderboard tracking.
-
+An interactive math-based game built using **HTML, CSS, JavaScript, PHP, and MySQL** that helps users practice BODMAS rules in a fun and engaging way.
 
 ---
 
+## 🚀 Features
 
-##  Game Engine (BODMAS Logic System)
-
-This module dynamically generates arithmetic questions based on BODMAS rules.
-
-### Input
-
-* Difficulty Level (Easy / Medium / Hard)
-* Random numbers and operators
-
-### Output
-
-* Generated Question
-* Correct Answer (calculated automatically)
-
---- 
-
-**Score & Leaderboard System**
-
-This stores player scores and displays top results.
-
-Input                                                                 
-
-Player Name                                                      
-Final Score                                                                  
-
-Output                                                                           
-Stored database entry                                                                   
-Leaderboard display                                                          
-Example Output                                                            
-Kesar - 12                                                            
-Rahul - 10                                                    
-Sneha - 8                                              
-
+- 🎯 Multiple Levels (Easy → Hard)
+- 🧠 Random BODMAS Questions Generator
+- ⏱ Countdown Timer
+- ❤️ Lives System
+- 💡 Hint System
+- 🔊 Sound Toggle
+- 🎉 Confetti Animation on Correct Answer
+- ⭐ Star Rating System
+- 🏆 Leaderboard (Top Scores)
+- 👤 Player-wise Progress (Each name has separate levels)
 
 ---
 
+## 🛠 Tech Stack
 
-**🧠 Game Logic Design**
-
-Example logic used for question generation:
-
-let question = `${num1} ${op1} ${num2} ${op2} ${num3}`;
-let answer = Math.floor(eval(question));
+- **Frontend:** HTML, CSS, JavaScript  
+- **Backend:** PHP  
+- **Database:** MySQL  
+- **Libraries:** Canvas Confetti  
 
 ---
-
-# Game rules:
-
-- Player has 60 seconds
-- Player has 3 lives
-- Each correct answer increases score
-- Wrong answer reduces life
-- Game ends when time or lives are over
-
-  ---
   
 # 🏗 System Architecture
 
@@ -97,31 +57,37 @@ Database (MySQL)
                                                                                                
 --- 
 
-# 🛠 Technologies Used
+ 
+---
 
-PHP
+## ⚙️ How to Run
 
-MySQL
+1. Install XAMPP / WAMP
+2. Move project folder to:
 
-HTML / CSS
-
-JavaScript
+   htdocs/
 
 
---- 
+3. Start:
+- Apache
+- MySQL
 
-# ⚙️ Setup Instructions
+4. Open browser:
 
-Install XAMPP or any PHP server.                                               
+http://localhost/bodmas-master/
 
-Place the project folder inside:                            
-htdocs/                                                          
-Create database:                                          
-bodmas_game                                          
-Create table:                                    
-scores                                            
-Run project in browser:                          
-http://localhost/bodmas-game
+
+---
+
+## 🎮 How to Play
+
+1. Enter your name
+2. Select difficulty
+3. Choose level
+4. Solve BODMAS questions
+5. Earn stars ⭐
+6. Unlock new levels
+7. Check leaderboard 🏆
 
 ---
 
@@ -135,11 +101,25 @@ Game Play
 Leaderboard
 ![Leaderboard](Leaderboard.png)
  
+ ## 💡 Future Improvements
+
+- 🥇 Top 3 Leaderboard Highlight (Gold/Silver/Bronze)
+- 📊 Player Statistics Dashboard
+- 📱 Mobile App Version
+- 🌐 Online Multiplayer Mode
+- 🧠 Advanced BODMAS Challenges
 
 ---
 
-# 👩‍💻 Author
+## 👩‍💻 Author
 
-**Kesar Karale                                                                  
-Regal College of Technology & Management                                                   
-SNDT University**
+**Kesar Karale**
+ Regal College of Technology & Management 
+ SNDT University
+---
+
+## ⭐ Support
+
+If you like this project, please ⭐ the repository!
+
+---
